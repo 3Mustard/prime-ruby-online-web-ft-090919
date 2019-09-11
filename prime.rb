@@ -1,4 +1,13 @@
 # Add  code here!
-def prime?(n)
-  if n >= 2 && n % 1 == n && n  
+def prime?(value)
+  if value <= 1
+    return false
+  elsif
+    (2..value - 1).each do |i|
+      if value % i == 0
+        return false
+      end
+    end
+  end
+  true
 end
